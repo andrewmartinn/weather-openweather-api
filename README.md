@@ -1,46 +1,77 @@
-# Getting Started with Create React App
+# weather-openweather-api
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A weather app that allows users to get the current weather for a specific location using the Open Weather API. Users can search for a city to get real-time weather information including temperature, weather conditions, and other relevant details.
 
-## Available Scripts
+## Technologies Used
 
-In the project directory, you can run:
+- [CRA](https://create-react-app.dev/): Create React App Set up a modern web app by running one command
+- [OpenWeather](https://openweathermap.org/api) API: Weather data provider
+- [Chakra UI](https://chakra-ui.com/): Simple, modular and accessible component library
+- [React Icons](https://react-icons.github.io/react-icons/) Include popular icons in your React projects easily with react-icons
+- [TypeScript](https://www.typescriptlang.org/): Typed superset of JavaScript
 
-### `yarn start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Search for weather by city name
+- Display current temperature and weather conditions
+- Dynamic background changes based on temperature
+- Toggle between Fahrenheit and Celsius units
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Project Outcomes
 
-### `yarn test`
+- Custom Hooks: Learned to create custom hooks in React, including a hook to convert Unix timestamps to date time strings and a useFetch hook to fetch data from APIs.
+- Consuming APIs for Real-Time Data: Gained experience in consuming APIs to present real-time weather data in a user-friendly format.
+- Custom Responsive Chakra UI Components: Created custom UI components utilizing Chakra UI that are responsive and mobile friendly.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Project Setup
 
-### `yarn build`
+This project was bootstrapped with Create React App.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To get started you need to:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Clone the project
+- Install listed dependencies
+- Create an OpenWeather API key and set it in the .env file
+- Run available scripts
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Install dependencies
 
-### `yarn eject`
+```
+npm install
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Obtain an OpenWeather API key
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Go to OpenWeather and sign up for an account.
+- Generate an API key in the API keys section of your account.
+- Add your API key to the .env file.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```
+REACT_APP_API_KEY=YOUR_API_KEY
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Run React dev server (http://localhost:3000)
 
-## Learn More
+```
+npm run dev
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Run the JSON server (http://localhost:5000)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+npm run server
+```
+
+### To build for production
+
+```
+npm run build
+```
+
+## Deployment
+
+To deploy this project run
+
+```
+  npm run deploy
+```
