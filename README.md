@@ -1,4 +1,5 @@
 # weather-openweather-api
+![weather-app-screenshot](https://github.com/andrewmartinn/weather-openweather-api/assets/152824513/3da524a4-7902-4951-88b3-2936de6ef8f4)
 
 A weather app that allows users to get the current weather for a specific location using the Open Weather API. Users can search for a city to get real-time weather information including temperature, weather conditions, and other relevant details.
 
@@ -40,7 +41,7 @@ To get started you need to:
 npm install
 ```
 
-## Obtain an OpenWeather API key
+### Obtain an OpenWeather API key
 
 - Go to OpenWeather and sign up for an account.
 - Generate an API key in the API keys section of your account.
