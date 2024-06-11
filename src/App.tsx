@@ -13,13 +13,15 @@ function App() {
       ? `https://api.openweathermap.org/data/2.5/weather?q=${searchTerm}&units=metric&appid=${process.env.REACT_APP_API_KEY}`
       : ""
   );
-  const coldWeatherBg = {
-    backgroundColor: "#0093E9",
-    backgroundImage: "linearGradient(160deg, #0093E9 0%, #80D0C7 100%)",
-  };
+  const temprature = weatherData?.main.temp ?? 0;
 
   return (
-    <Box w={"100%"} h={"100%"} minH={"100vh"} style={coldWeatherBg}>
+    <Box
+      w={"100%"}
+      h={"100%"}
+      minH={"100vh"}
+      bg={temprature < 25 ? "#0093E9" : "#FBAB7E"}
+    >
       <Header />
       <Container
         maxW={"4xl"}
