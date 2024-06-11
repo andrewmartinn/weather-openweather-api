@@ -17,10 +17,13 @@ const WeatherDetailedStats: React.FC<WeatherDetailedStatsProps> = ({
   const windSpeed = (weather.wind.speed * 3.6).toFixed(1);
   return (
     <Box pt={"4rem"}>
-      <Grid gridTemplateColumns={"repeat(2, 1fr)"} gap={"10"}>
+      <Grid
+        gridTemplateColumns={{ base: "1fr", md: "repeat(2, 1fr)" }}
+        gap={"10"}
+      >
         <Box>
           <Flex
-            gap={"10rem"}
+            gap={{ base: "4rem", md: "10rem" }}
             justifyContent={"space-between"}
             alignItems={"center"}
             mb={"4"}
@@ -42,7 +45,7 @@ const WeatherDetailedStats: React.FC<WeatherDetailedStatsProps> = ({
           </Flex>
           <Divider />
           <Flex
-            gap={"10rem"}
+            gap={{ base: "4rem", md: "10rem" }}
             justifyContent={"space-between"}
             alignItems={"center"}
             mb={"4"}
@@ -61,7 +64,7 @@ const WeatherDetailedStats: React.FC<WeatherDetailedStatsProps> = ({
           </Flex>
           <Divider />
           <Flex
-            gap={"10rem"}
+            gap={{ base: "4rem", md: "10rem" }}
             justifyContent={"space-between"}
             alignItems={"center"}
             mb={"4"}
@@ -81,7 +84,7 @@ const WeatherDetailedStats: React.FC<WeatherDetailedStatsProps> = ({
         </Box>
         <Box>
           <Flex
-            gap={"10rem"}
+            gap={{ base: "4rem", md: "10rem" }}
             justifyContent={"space-between"}
             alignItems={"center"}
             mb={"4"}
@@ -99,7 +102,7 @@ const WeatherDetailedStats: React.FC<WeatherDetailedStatsProps> = ({
           </Flex>
           <Divider />
           <Flex
-            gap={"10rem"}
+            gap={{ base: "4rem", md: "10rem" }}
             justifyContent={"space-between"}
             alignItems={"center"}
             mb={"4"}
@@ -118,7 +121,7 @@ const WeatherDetailedStats: React.FC<WeatherDetailedStatsProps> = ({
           </Flex>
           <Divider />
           <Flex
-            gap={"10rem"}
+            gap={{ base: "4rem", md: "10rem" }}
             justifyContent={"space-between"}
             alignItems={"center"}
             mb={"4"}

@@ -32,9 +32,9 @@ function App() {
   }, [searchTerm]);
 
   return (
-    <Box w={"100%"} h={"100vh"} style={coldWeatherBg}>
+    <Box w={"100%"} h={"100%"} minH={"100vh"} style={coldWeatherBg}>
       <Header />
-      <Container maxW={"4xl"} centerContent pt={"3rem"}>
+      <Container maxW={"4xl"} centerContent pt={"3rem"} py={"4"}>
         <SearchBox handleSearch={setSearchTerm} />
         {weatherData && <WeatherDisplay weather={weatherData} />}
       </Container>

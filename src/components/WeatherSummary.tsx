@@ -13,11 +13,16 @@ const WeatherSummary: React.FC<WeatherSummaryProps> = ({
   isFahrenheit,
 }) => {
   return (
-    <Flex alignItems={"center"} justifyContent={"space-between"}>
+    <Flex
+      alignItems={"center"}
+      justifyContent={"space-between"}
+      direction={{ base: "column", md: "row" }}
+      gap={{ base: "8" }}
+    >
       <Flex alignItems={"center"} gap={"8"}>
         <WeatherIcon weather={weather} />
         <Box>
-          <Text fontSize={"5xl"} color={"#444"}>
+          <Text fontSize={{ base: "3xl", md: "5xl" }} color={"#444"}>
             {isFahrenheit
               ? `${Math.round(weather.main.temp * 9) / 5 + 32} °F`
               : `${Math.round(weather.main.temp)} °C`}
@@ -29,7 +34,7 @@ const WeatherSummary: React.FC<WeatherSummaryProps> = ({
       </Flex>
       <Box>
         <Flex
-          gap={"10rem"}
+          gap={{ base: "1rem", md: "10rem" }}
           justifyContent={"space-between"}
           alignItems={"center"}
           mb={"4"}
@@ -46,7 +51,7 @@ const WeatherSummary: React.FC<WeatherSummaryProps> = ({
         </Flex>
 
         <Flex
-          gap={"10rem"}
+          gap={{ base: "1rem", md: "10rem" }}
           justifyContent={"space-between"}
           alignItems={"center"}
         >

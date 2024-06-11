@@ -20,7 +20,13 @@ const WeatherDisplay: React.FC<WeatherDisplayProps> = ({ weather }) => {
 
   return (
     <Box w={"100%"}>
-      <Flex justifyContent={"space-between"} alignItems={"center"} pb={"2"}>
+      <Flex
+        justifyContent={"space-between"}
+        alignItems={"center"}
+        pb={"2"}
+        direction={{ base: "column", md: "row" }}
+        gap={{ base: "1rem" }}
+      >
         <Text fontSize={"4xl"} color={"#fff"} fontWeight={"bold"}>
           {weather.name}, {weather.sys.country}
         </Text>
@@ -29,7 +35,7 @@ const WeatherDisplay: React.FC<WeatherDisplayProps> = ({ weather }) => {
           handleUnitToggle={handleUnitToggle}
         />
       </Flex>
-      <Card bg={"white"} w={"100%"} borderRadius={"md"} h={"450px"}>
+      <Card bg={"white"} w={"100%"} borderRadius={"md"}>
         <Flex
           px={7}
           py={4}
