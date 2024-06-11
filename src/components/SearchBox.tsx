@@ -22,7 +22,7 @@ const SearchBox: React.FC<SearchBoxProps> = ({ handleSearch }) => {
     }
   };
   return (
-    <Box py={"4rem"} w={"80%"}>
+    <Box py={"2rem"} w={"80%"}>
       <form onSubmit={handleSubmit}>
         <InputGroup>
           <Input
